@@ -1,2 +1,5 @@
-#ignore ipython notebooks
-*.ipynb
+#ignore zip files
+*.zip
+
+#ignore folder related to dataset
+data/
