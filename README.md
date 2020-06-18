@@ -1,6 +1,27 @@
 # Plagiarism Detection
 ## Using AWS SageMaker
-The notebook and Python files provided in this repository, result in a plagiarism detection model.
+This repository contains code and associated files for deploying a plagiarism detector using AWS SageMaker.
+
+## Project Overview
+In this project, we build a plagiarism detector that examines a text file and performs binary classification; labeling that file as either *plagiarized* or *not*, depending on how similar that text file is to a provided source text.
+
+This project will be broken down into three main notebooks:
+
+**Notebook 1: Data Exploration**
+* Load in the corpus of plagiarism text data.
+* Explore the existing data features and the data distribution.
+
+**Notebook 2: Feature Engineering**
+* Clean and pre-process the text data.
+* Define features for comparing the similarity of an answer text and a source text, and extract similarity features.
+* Select "good" features, by analyzing the correlations between different features.
+* Create train/test `.csv` files that hold the relevant features and class labels for train/test data points.
+
+**Notebook 3: Train and Deploy the Model in SageMaker**
+* Upload train/test feature data to S3.
+* Define a binary classification model and a training script.
+* Train the model and deploy it using SageMaker.
+* Evaluate the deployed classifier.
 
 ## Setup Instructions
 The notebooks provided in this repository are intended to be executed using Amazon's SageMaker platform. The following is a brief set of instructions on setting up a managed notebook instance using SageMaker, from which the notebooks can be completed and run.
