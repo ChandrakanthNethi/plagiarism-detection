@@ -7,17 +7,17 @@ In this project, we build a plagiarism detector that examines a text file and pe
 
 This project will be broken down into three main notebooks:
 
-**Notebook 1: Data Exploration**
+**Notebook 1: [Data Exploration](https://github.com/ChandrakanthNethi/plagiarism-detection-using-AWS-SageMaker/blob/master/1_Data_Exploration.ipynb)**
 * Load in the corpus of plagiarism text data.
 * Explore the existing data features and the data distribution.
 
-**Notebook 2: Feature Engineering**
+**Notebook 2: [Feature Engineering](https://github.com/ChandrakanthNethi/plagiarism-detection-using-AWS-SageMaker/blob/master/2_Plagiarism_Feature_Engineering.ipynb)**
 * Clean and pre-process the text data.
 * Define features for comparing the similarity of an answer text and a source text, and extract similarity features.
 * Select "good" features, by analyzing the correlations between different features.
 * Create train/test `.csv` files that hold the relevant features and class labels for train/test data points.
 
-**Notebook 3: Train and Deploy the Model in SageMaker**
+**Notebook 3: [Train and Deploy the Model in SageMaker](https://github.com/ChandrakanthNethi/plagiarism-detection-using-AWS-SageMaker/blob/master/3_Training_a_Model.ipynb)**
 * Upload train/test feature data to S3.
 * Define a binary classification model and a training script.
 * Train the model and deploy it using SageMaker.
